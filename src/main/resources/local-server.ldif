@@ -1,0 +1,22 @@
+dn: dc=memorynotfound,dc=com
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: memorynotfound
+
+
+dn: ou=people,dc=memorynotfound,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+# Create People
+dn: uid=1,ou=people,dc=memorynotfound,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: popescu
+sn: parola
+uid: 1
+password: secret
