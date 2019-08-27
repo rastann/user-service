@@ -23,7 +23,7 @@ public class UserController {
         if(userService.authenticate(username, password)) {
             return "Access granted !";
         } else {
-            throw new AuthenticationException();
+            throw new AuthenticationException("Authentication failed! Username or password invalid !");
         }
     }
 }
